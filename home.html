@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--The website operates off of one universal stylesheet/ css document. This helps keep the layout and design cohesive and uniform.-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+</style>
+<!--Custom google fonts have been imported from the google fonts website. I have used the import function here rather than in css as it is faster and more efficient.
+ In addition, my website's didnt load when using the import font in the css file-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--I have used this to enable my website to scale depending on the context (screen size) and allow it to operate across different platforms such as phones, tablets, computers-->
+    <title>The Batman:Home</title>
+    <!--Used to tell the user what page they are currently viewing.-->
+  </head>
+  <body>
+<img src="Image/header.png" alt="header">
+<!--For the "header image", I chose to use a custom made image using photoshop that would act as the header of the webpage.
+I did this because my original image, when in the header, would only scale to the left hand side of the display (when in tablet mode).
+Therefore, using an image function, I worked round the problem and made it so that it scaled to the middle of the display in different contexts .
+ In addition, the stylised look of the custom header adds to the comic book aesthetic that I originally intended within the website's design-->
+<header>
+  <!--Links for pages inside header and nav function. I have done this because the main image (see line 17) wasn't able to scale correctly inside the header function.
+  Therefore, I utilised the header to contain the nav function and allowing me to have a fully scalable website.-->
+<nav>
+  <a href="home.html">H O M E</a>
+  <a href="cast.html">C A S T</a>
+  <a href="extras.html">E X T R A S</a>
+</nav>
+</header>
+<h1>HOME</h1>
+  <!--Used to tell the user what page they are currently viewing.-->
+<div class="content">
+  <!--Synopsis div. Here I have provided a small synopsis of the film, as seen in multiple promotional websites, as it allows the user to get a brief idea of what the film is about.
+  My use of h2 and h3 for titles helps emphasise the importance of elements in the website, as well as -->
+<h2>THE BATMAN BEGINS...</h2>
+<h3>In Matt Reeves's new detective spin on the classic hero, Robert Pattinson is donning the cowl as the caped crusader, Batman. <br>Gotham has become ruthless world where corruption and crime plagues the streets and a mysterious killer is on the loose. This<br>has attracted the attention of the GCPD and the billionaire-turned-vigilante Bruce Wayne. With tensions rising high,<br> the Batman must become the true detective and wade his way through the dark underbelly of Gotham to find the killer. But can he do it?</h3>
+<p>RIDDLE ME THIS?</p>
+<p>"Based on characters from DC. Batman was created by Bob Kane with Bill Finger. “The Batman” is set to open Only In Cinemas in select 3D and 2D and IMAX theaters and will be distributed worldwide by Warner Bros. Pictures.""</p>
+<p>Taken from the Batman Warner Bro website</p>
+<!-- Trailer section with browser support-->
+<h1>TRAILER</h1>
+
+<img src="Image/break.png" alt="break">
+
+<!--Here, I have used an Iframe (embedded youtube video) to display the trailer as I wanted to have a high resolution trailer, despite the 25 megabyte file limit .
+ The iframe works around it as I dont have to sacrifice quality and trailer length to get around it. In addition, it also adds to the user experience as users can watch suggested videos based around The Batman.
+ Therefore, it gratifies them, as well as utilises a platform(YouTube) that the user is familiar with. -->
+<iframe width="1920" height="1080" src="https://www.youtube.com/embed/NLOp_6uPccQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<img src="Image/batman break.png" alt="">
+
+<!--Teaser Trailer section with browser support for both Webm and mp4. I have done this as both formats are compatible with all browser types.
+ In addition, the teaser also offers another look at the soon-to-be-released film.
+ Therefore, this adds to the user experience as it satisfies the users need to watch more content, as well as feeds their curiosity.-->
+<h1>TEASER</h1>
+  <video controls poster="Image/car.jpg">
+    <source src="Video/Teaser.mp4" type="video/mp4">
+    <source src="Video/Teaser.webm" type="video/webm">
+      <p>Your browser doesn't support the file. Click <a href="Video/Teaser.mp4">HERE</a>to download it.</p>
+  </video>
+<!-- Table function has been used to display all the key information ( age rating, director, release date etc.) in an organised way.
+In addition, I have included such information as I wanted to emulate a similar style to most film websites (having age ratings etc.) as it allows the user to understand details surrounding the film-->
+<table>
+  <tr>
+    <th>RELEASE DATE:</th>
+    <th>DIRECTOR:</th>
+    <th>GENRE:</th>
+    <th>AGE RATING:</th>
+  </tr>
+  <tr>
+    <td>TBC 2021</td>
+    <td>MATTHEW REEVES</td>
+    <td>SUPERHERO/DETECTIVE</td>
+    <td>18</td>
+  </tr>
+</table>
+<!-- Pre-Footer decoration to help keep in theme of comic books and has a clue (Lets play a game, just you and me) that relates to an important plot point (the murderer).
+Therefore, users are gratified by the look of the website and the intertextual reference to The Batman film.-->
+<img src="Image/footer break.png" alt="footer break">
+
+  <!--In the footer, I have included the link to the official The Batman promotional page by Warner Bros TM, as well as my P number and name.
+  I included the link to the official website as users may want to explore further and read into the film. -->
+<footer>
+<a href="https://www.warnerbros.com/movies/the-batman"; target="_blank">Click here to visit the Warner Bros TM website for more information. </a>
+<p>Website was created by Ashley Daniel Powell. Student ID: P2587722</p>
+</footer>
+  <!---->
+
+  </body>
+</html>

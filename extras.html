@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--The website operates off of one universal stylesheet/ css document. This helps keep the layout and design cohesive and uniform.-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--The website operates off of one universal stylesheet/ css document. This helps keep the layout and design cohesive and uniform.-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Here, I am importing the social media logo/ buttons from a style sheet. This allows me to create the custom link buttons at the bottom of the webpage-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+</style>
+<!--Custom google fonts have been imported from the google fonts website. I have used the import function here rather than in css as it is faster and more efficient.
+ In addition, my website's didnt load when using the import font in the css file-->
+
+    <title>The Batman:Extras</title>
+      <!--Used to tell the user what page they are currently viewing.-->
+  </head>
+  <body>
+<img src="Image/header.png" alt="header">
+<header>
+  <!--Links for pages inside header and nav function. I have done this because the main image (see line 17) wasn't able to scale correctly inside the header function.
+  Therefore, I utilised the header to contain the nav function and allowing me to have a fully scalable website.-->
+<nav>
+  <a href="home.html">H O M E</a>
+  <a href="cast.html">C A S T</a>
+  <a href="extras.html">E X T R A S</a>
+</nav>
+</header>
+<h1>EXTRAS</h1>
+  <!--Used to tell the user what page they are currently viewing.-->
+<!-- Slideshow container. I have used a small slideshow as I wanted to challenge myself with coding, as well as utilise a feaure that is present throughou all promotional websites. In addition, it helps add to the users experience by allowing them to see promotional photos, behind the scenes photos and photos of important moments taken from the film.-->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="Image/Bruce.jpg" style="width:100%">
+    <div class="text">Bruce is in trouble...</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="Image/car.jpg" style="width:100%">
+    <div class="text">The new Batmobile is here</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Image/liverpool.jpg" style="width:100%">
+    <div class="text">Something is afoot in Liverpool</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Changes image every 10 seconds. This allows users time to read and look at the images and text.
+}
+</script>
+<p>Image are taken from Warner Bros TM</p>
+  <!--END OF SLIDESHOW JAVA SCRIPT.-->
+<h1>To catch up on all things The Batman, use our social media links to find out more!</h1>
+  <!--Social media table. Used so each button is clearly labeled, spaced and presentable and helps organise just like the table in the home page-->
+<table class="content">
+    <!--Social Media title row. These titles are clearly labeled and help show the user which social media corresponds to the button below-->
+  <tr>
+    <th>YOUTUBE</th>
+    <th>INSTAGRAM</th>
+    <th>TWITTER</th>
+  </tr>
+    <!--Button Row-->
+  <tr>
+    <th>
+        <!--YOUTUBE SOCIAL MEDIA BUTTON LINK. I used the social media icons ( being imported from another  website's style sheet) as they are easily recognisable icons that the user will quickly associate with the corresponding social media platform-->
+      <a href="https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g" class="fa fa-youtube" target="_blank"></a>
+    </th>
+    <th>
+        <!--INSTAGRAM SOCIAL MEDIA BUTTON LINK-->
+      <a href="https://www.instagram.com/thebatman/?hl=en" class="fa fa-instagram" target="_blank"></a>
+    </th>
+    <!--TWITTER SOCIAL MEDIA BUTTON LINK-->
+    <th>
+      <a href="https://twitter.com/thebatman?lang=en" class="fa fa-twitter" target="_blank"></a>
+    </th>
+  </tr>
+</table>
+
+<!--In the footer, I have included the link to the official The Batman promotional page by Warner Bros TM, as well as my P number and name.
+I included the link to the official website as users may want to explore further and read into the film. -->
+<footer>
+<a href="https://www.warnerbros.com/movies/the-batman"; target="_blank">Click here to visit the Warner Bros TM website for more information. </a>
+<p>Website was created by Ashley Daniel Powell. Student ID: P2587722</p>
+</footer>
+  </body>
+</html>

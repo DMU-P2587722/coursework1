@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--The website operates off of one universal stylesheet/ css document. This helps keep the layout and design cohesive and uniform.-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--I have used this to enable my website to scale depending on the context (screen size) and allow it to operate across different platforms such as phones, tablets, computers-->
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+</style>
+      <!--Custom google fonts have been imported from the google fonts website. I have used the import function here rather than in css as it is faster and more efficient. In addition, my website's didnt load when using the import font in the css file-->
+
+    <title>The Batman: Cast</title>
+      <!--Used to tell the user what page they are currently viewing.-->
+  </head>
+  <body>
+<img src="Image/header.png" alt="header">
+<header>
+  <!--Links for pages inside header and nav function. I have done this because the main image (see line 17) wasn't able to scale correctly inside the header function.
+  Therefore, I utilised the header to contain the nav function and allowing me to have a fully scalable website.-->
+  <nav>
+    <a href="home.html">H O M E</a>
+    <a href="cast.html">C A S T</a>
+    <a href="extras.html">E X T R A S</a>
+  </nav>
+
+</header>
+<!-- Image break to help divide up page and mark new area for the viewer-->
+<img src="Image/break.png" alt="">
+
+<h1>CAST</h1>
+  <!--Used to tell the user what page they are currently viewing.-->
+
+<!-- Start of Cast segment. The div class is linked to the .cast section on stylesheet. This is used for floating the image left and managing the other elements.
+The Section helps break the div up and helps arrange everything( as seen in Thom's lab sessions). -->
+
+<div class="cast">
+  <img src="Image/rob.png" alt="">
+  <header class="cast">
+    <h1>ROBERT PATTINSON is BRUCE WAYNE</h1>
+    <!--Actor and character name is in h1 to make it larger and more noticable to the user. -->
+  </header>
+  <section>
+    <!--Here, I used a section function within all of the cast divs as it helps organise and structure the information so that it can float to each side without affecting the rest of the website.-->
+
+          <!-- Description of the character being portrayed in the film. This helps the audience learn who the actor will be portraying.-->
+    <h2>Award Winning actor Robert Pattinson is donning the cowl as billionaire-turned-vigilante Bruce Wayne. </h2>
+
+          <!-- Biography taken from Wikipedia. This gives a small backstory to the actor for those users who arent familiar with the cast.-->
+    <p>Robert Douglas Thomas Pattinson (born 13 May 1986) is an English actor. After starting to act in a London theatre club at the age of 15, he began his film career by playing Cedric Diggory in the fantasy film Harry Potter and the Goblet of Fire (2005). He went on to star as Edward Cullen in the film adaptations of the Twilight novels, consisting of five films between 2008 and 2012, which earned a combined total of over $3.3 billion worldwide. It brought Pattinson worldwide fame and established him among the world's highest-paid actors.<br> After starring in the romantic dramas Remember Me (2010) and Water for Elephants (2011), Pattinson eschewed roles in big-budget films in favour of independent productions helmed by auteurs. He played a manipulative billionaire in David Cronenberg's thriller Cosmopolis (2012), an aspiring actor in Cronenberg's satire Maps to the Stars (2014), an explorer in James Gray's adventure drama The Lost City of Z (2016), a bank robber in the Safdie Brothers' crime drama Good Time (2017), a criminal in a spaceship in Claire Denis' science-fiction drama High Life (2018), and a troubled lighthouse keeper in Robert Eggers' horror film The Lighthouse (2019). He returned to mainstream films with a leading role in Christopher Nolan's spy film Tenet (2020).Pattinson has sung songs for the Twilight soundtrack and the film How to Be (both 2008). He supports several charities, including the GO Campaign. In 2010, Time magazine named him one of the 100 most influential people in the world, and he was featured in the Forbes Celebrity 100 list. </p>
+
+          <!-- Small synopsis as to what the character will do in the film. This gives the reader a small understanding of the overall plot and what is to be expected in the film.-->
+    <p>In THE BATMAN, Pattinson will play a young Bruce Wayne, still in the infancy stage of being Batman. With tensions rising high and a murderer on the loose, he must rise up to the challenge and take the murderer down.</p>
+    <h3>Here is what Robert had to say about his role in The Batman.</h3>
+
+    <!-- Audio Function has browser compatibility and failsafe in the event of no audio. WAV and MP3 have been used as theyre the most used format among the multiple browsing platforms.-->
+    <audio controls>
+      <source src="Audio/rob interview.mp3" type="audio/mpeg">
+      <source src="Audio/rob interview.wav" type="audio/wav">
+        <p>Your browser doesn't support the file. Click <a href="Audio/rob interview.mp3">HERE</a>to download it.</p>
+    </audio>
+          <!-- Links to original sources so that users can continue reading/ investigate further. It also credits and discloses sources. In addition, I have used the text decoration function here as I had problems with CSS rules clashing and causing problems such as the animations (hover) conflicting with the original outlined rules.-->
+      <p>Audio has been taken from his <a href="https://www.youtube.com/watch?v=Ta0Jm1RRKE0"; style="text-decoration:underline"; target="_blank">interview</a> with Variety TM </p>
+      <p> Biography is from <a href="https://en.wikipedia.org/wiki/Robert_Pattinson"; style="text-decoration:underline"; target="_blank">WIKIPEDIA</a> TM</p>
+
+  </section>
+
+<footer class="cast"></footer>
+</div>
+<!-- End of Robert Pattinson Cast section-->
+
+
+<!--Decorative break to help make it easier for people to read and distinguish information.
+ The symbols that are synonymous with the characters (e.g the bat symbol for batman) have been used to guide the user through the page, as well as distinguish the position and cutoff for each cast memebers section-->
+<img src="Image/batman break.png" alt="">
+
+<!-- Start of Zoe Kravitz Cast segment. The div class (cast1) is linked to the .cast1 section on stylesheet. This is used for floating the image right and managing the other elements.
+The Section helps break the div up and helps arrange everything( as seen in Thom's lab sessions). -->
+<div class="cast1">
+  <img src="Image/zoe.png" alt="">
+  <header class="cast">
+    <h1>ZOE KRAVITZ is THE CATWOMAN</h1>
+  </header>
+  <section>
+          <!-- Description of the character being portrayed in the film-->
+    <h2>Whilst Gotham is in total chaos, Zoe Kravitz will be playing the opportunistic kleptomaniac, Selena Kyle.</h2>
+          <!-- Biography taken from Wikipedia-->
+    <p>Zoë Isabella Kravitz (born December 1, 1988) is an American actress, singer and model. The daughter of actor-musician Lenny Kravitz and actress Lisa Bonet, Kravitz achieved recognition for her portrayal of Angel Salvadore in the 2011 superhero film X-Men: First Class, which was followed by supporting roles in The Divergent Series (2014–2016) and Mad Max: Fury Road (2015). Kravitz made her acting debut in the 2007 romantic comedy film No Reservations. Since then, she has starred as Leta Lestrange in the Harry Potter spin-off, the Fantastic Beasts film series, and voiced Mary Jane Watson in Spider-Man: Into the Spider-Verse (2018). She has had starring roles in numerous independent films, including Dope (2015), Adam Green's Aladdin (2016), and Gemini (2017). In addition, Kravitz portrayed lead roles in the HBO drama series Big Little Lies (2017–2019) and the Hulu romantic comedy series High Fidelity (2020). After voicing Catwoman in The Lego Batman Movie (2017), she is now set to play her in live action for The Batman (2022). </p>
+          <!-- Small synopsis as to what the character will do in the film-->
+
+    <p>In THE BATMAN, Kravitz stars as the feline thief Catwoman. </p>
+    <h3>Here is what Zoe told Ellen DeGenres about her time on The Batman<./h3>
+    <!-- Audio Function has browser compatibility and failsafe in the event of no audio. WAV and MP3 have been used as theyre the most used format among the multiple browsing platforms.-->
+    <audio controls>
+      <source src="Audio/zoe interview.mp3" type="audio/mpeg">
+      <source src="Audio/zoe interview.wav" type="audio/wav">
+        <p>Your browser doesn't support the file. Click <a href="Audio/rob interview.mp3">HERE</a>to download it.</p>
+    </audio>
+          <!-- Links to original sources so that users can continue reading/ investigate further. It also credits and discloses sources.-->
+      <p>Audio has been taken from her <a href="https://www.youtube.com/watch?v=0Xj8Ut_xJpE"; style="text-decoration:underline"; target="_blank">interview with Ellen DeGenres</a> </p>
+      <p> Biography is from <a href="https://en.wikipedia.org/wiki/Zo%C3%AB_Kravitz"; style="text-decoration:underline"; target="_blank">WIKIPEDIA</a> TM</p>
+
+  </section>
+
+<footer class="cast1"></footer>
+</div>
+<!-- End of Zoe Kravitz Cast section-->
+
+<img src="Image/cat break.png" alt="">
+<!--Decorative break to help make it easier for people to read and distinguish information(as described on line 62)-->
+
+<!-- Start of Jeffery Wright Cast segment. The div class (cast) is linked to the .cast section on stylesheet. This is used for floating the image left and managing the other elements to float to the left hand side of the display.
+The Section helps break the div up and helps arrange everything( as seen in Thom's lab sessions). -->
+<div class="cast">
+  <img src="Image/jeff.png" alt="">
+  <header class="cast">
+    <h1>JEFFREY WRIGHT is JIM GORDON</h1>
+  </header>
+  <section>
+          <!-- Description of the character being portrayed in the film-->
+    <h2>Emmy nominated actor Jeffrey Wright will be playing the level-headed investigator, Jim Gordon.</h2>
+          <!-- Biography taken from Wikipedia-->
+    <p>Jeffrey Wright (born December 7, 1965) is an American actor. He is best known for his Tony, Golden Globe, and Emmy winning role as Belize in the Broadway production Angels in America and its acclaimed HBO miniseries adaptation. He also starred as Jean-Michel Basquiat in Basquiat, Felix Leiter in the James Bond films Casino Royale, Quantum of Solace and No Time to Die, Valentin Narcisse in the HBO series Boardwalk Empire, and Beetee in The Hunger Games films. Since 2016, Wright has starred as Bernard Lowe and Arnold Weber in the HBO series Westworld. Wright will portray Commissioner James "Jim" Gordon in the superhero film The Batman (2022) by Matt Reeves. </p>
+          <!-- Small synopsis as to what the character will do in the film-->
+    <p>In THE BATMAN, Wright plays Jim Gordon. During his time with the GCPD, Jim has had stressful cases and tough decisions, however with Gotham's resident killer on the loose, he has to call for help from the mysterious detective Batman. </p>
+    <h3>Here is what Jeffrey told SiriusXM about his time on The Batman and his opinions on it.</h3>
+    <!-- Audio Function has browser compatibility and failsafe in the event of no audio. WAV and MP3 have been used as theyre the most used format among the multiple browsing platforms.-->
+
+    <audio controls>
+      <source src="Audio/jeffrey interview.mp3" type="audio/mpeg">
+      <source src="Audio/jeffrey interview.wav" type="audio/wav">
+        <p>Your browser doesn't support the file. Click <a href="Audio/rob interview.mp3">HERE</a>to download it.</p>
+    </audio>
+          <!-- Links to original sources so that users can continue reading/ investigate further. It also credits and discloses sources.-->
+      <p>Audio has been taken from his <a href="https://www.youtube.com/watch?v=bcOwJUHbCVE"; style="text-decoration:underline"; target="_blank">interview with SiriusXM</a> </p>
+      <p> Biography is from <a href="https://en.wikipedia.org/wiki/Jeffrey_Wright"; style="text-decoration:underline"; target="_blank">WIKIPEDIA</a> TM</p>
+  </section>
+<footer class="cast"></footer>
+</div>
+<!-- End of Jeffery Wright Cast section-->
+
+<img src="Image/gcpd break.png" alt="">
+<!--Decorative break to help make it easier for people to read and distinguish information(as described on line 62)-->
+
+<!-- Start of Paul Dano Cast segment. The div class1 is linked to the .cast1 section on stylesheet. This is used for floating the image right and managing the other elements.
+The Section helps break the div up and helps arrange everything( as seen in Thom's lab sessions). -->
+<div class="cast1">
+  <img src="Image/paul.png" alt="">
+  <header class="cast1">
+    <h1>PAUL DANO is EDWARD NIGMA</h1>
+  </header>
+  <section>
+          <!-- Description of the character being portrayed in the film-->
+
+    <h2>Paul Dano stars in The Batman as Gotham's elusive killer, Edward Nigma.</h2>
+          <!-- Biography taken from Wikipedia-->
+
+    <p>Paul Franklin Dano is an American actor, director, screenwriter, producer, and musician.Dano started his career on Broadway before making his film debut in The Newcomers (2000). He won the Independent Spirit Award for Best Debut Performance for his role in L.I.E. (2002) and received accolades for his role as Dwayne Hoover in Little Miss Sunshine (2006). For his dual roles as Paul and Eli Sunday in Paul Thomas Anderson's There Will Be Blood (2007), he was nominated for the BAFTA Award for Best Supporting Actor. Dano has also received accolades for roles such as John Tibeats in Steve McQueen's 12 Years a Slave (2013) and Alex Jones in Dennis Villeneuve's Prisoners (2013). His acting portrayal of musician Brian Wilson in Love & Mercy (2014) earned him a Golden Globe nomination in the category of Best Supporting Actor. He has been cast as Edward Nashton / The Riddler in The Batman (2022).Dano made his directorial debut with the 2018 drama film Wildlife, based on the novel by Richard Ford and starring Carey Mulligan and Jake Gyllenhaal. He co-wrote the screenplay with his partner Zoe Kazan. In 2018, he starred in the Showtime miniseries Escape at Dannemora, for which he received a Primetime Emmy Award nomination for Outstanding Supporting Actor in a Limited Series or Movie. </p>
+          <!-- Small synopsis as to what the character will do in the film-->
+
+    <p>In THE BATMAN, Dano is Edward Nigma. Driven to expose Gotham's corruption, Nigma is doing more than just making petitions to bring the injustice to light. He is out for blood... </p>
+    <h3>Here is what Paul said about his time so far working on The Batman.</h3>
+    <!-- Audio Function has browser compatibility and failsafe in the event of no audio. WAV and MP3 have been used as theyre the most used format among the multiple browsing platforms.-->
+
+      <h2>" I feel really good about it. I think Matt Reeves is the real deal. I was really surprised by his script, which I think is, is potentially really powerful. Hopefully we’ll get to get back to it sometime soon? I’m not sure.”</h2>
+          <!-- Links to original sources so that users can continue reading/ investigate further. It also credits and discloses sources.-->
+
+      <p>Quote has been taken from his interview with <a href="https://theplaylist.net/paul-dano-batman-script-20200530/"; style="text-decoration:underline"; target="_blank">ThePlaylist</a>TM</p>
+      <p> Biography is from <a href="https://en.wikipedia.org/wiki/Paul_Dano"; style="text-decoration:underline"; class="normal">WIKIPEDIA</a> TM</p>
+
+  </section>
+
+<footer class="cast1"></footer>
+</div>
+<!-- End of Paul Dano Cast section-->
+
+<img src="Image/riddler break.png" alt="">
+<!--Decorative break to help make it easier for people to read and distinguish information(as described on line 62)-->
+
+<div class="othercast"> <!--Like with the table on home.html, I used the table function to organise the final cast memeber into a symplistic layout.
+   In addition, I used a separate class (othercast) to have a focussed set of rules for this div. This floats the table to the centre and allows for the
+    information to stay central when scaled down or up.-->
+  <h1>Other Cast</h1>
+  <table>
+    <tr>
+      <th>
+        <img src="Image/andy.png" alt="">
+      </th>
+    </tr>
+    <tr>
+      <td>Andy Serkis is Alfred Pennyworth</td>
+    </tr>
+  </table>
+</div>
+<!-- Pre-Footer decoration to help keep in theme of comic books and has a clue (Lets play a game, just you and me) that relates to an important plot point (the murderer).
+Therefore, users are gratified by the look of the website and the intertextual reference to The Batman film.-->
+  <img src="Image/footer break.png" alt="">
+
+
+  <!--In the footer, I have included the link to the official The Batman promotional page by Warner Bros TM, as well as my P number and name.
+  I included the link to the official website as users may want to explore further and read into the film. -->
+  <footer>
+<a href="https://www.warnerbros.com/movies/the-batman"; target="_blank">Click here to visit the Warner Bros TM website for more information. </a>
+<p>Website was created by Ashley Daniel Powell. Student ID: P2587722</p>
+  </footer>
+  </body>
+</html>

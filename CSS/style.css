@@ -1,0 +1,199 @@
+header{background-color: #0d0d0d;padding:25px;}
+/*For the header, I chose a dark grey colour (0d0d0d) as it both contrasts and compliments the existing colour scheme.
+In addition, this contrast highlights the header on the webpage and signifies the navigation menu for the user.
+Using the box model function padding, I wanted to have a header that would stand out, as well as compliment the design of the webpage.
+As mentioned, the large padding helped with signifying the navigation menu, however, it did not dominate the entire website*/
+
+a{font-family: 'Oswald'; color:#f7001e;text-decoration:none;margin-right: 10px; text-align: center;}
+/*In terms of the anchor function, I chose to utilise the Oswald font as it follows my overall aesthetic. In addition, the contrast between Oswald
+and Special Elite adds to the user experience as they can differentiate between critical and secondary information. For the colour, I used the
+red (seen throughout the colour scheme) as it adds a sense of uniformity in the design. In regards to margin, I added this so that the anchor
+was clear and visible for the user to see.*/
+
+
+footer{background-color: #1a1a1a;padding:50px; text-align: center;}
+/*Like with the header, I followed the same design philosophy, however, I used a lighter grey tone and larger padding to help signify the bottom of the page, as well as highlight my link and P number.*/
+
+img{max-width: 100%; margin-bottom: 5px; margin-top:5px;}
+/*For the image function, I used max-width 100% as it helps each image scale relative to the context(screen size etc).
+In addition, I used the margin top and bottom feature to add spacing between elements, such as text, as it creates distance and allows for the webpage to feel spacious and legible(especially when some users may be visually impaired)*/
+
+body{background-color: black; margin: 0}
+/*The webpages colour is set to black as the colour scheme of black, red and white immitates the colour scheme of the logo.
+In addition, it makes the website more legible for dyslexic users as the colour contrast between the text and background is very stark.*/
+
+p{font-family: 'Special Elite', cursive;color: #f7001e; text-align: center; padding: 10px}
+/*Special Elite is the primary font of the website.It was chosen to help emulate a comic book/ sinister look throughout the page, as well as contrast the secondary typeface*/
+
+h1{color: white; font-family: 'Oswald',sans-serif;; font-size:; text-align: center;}
+/*Oswald is the secondary sans serif font of the website. This has been used for the more serious pieces of information like ratings, page names, biographies and credits.
+ The white also helps contras the black background and helps make the page more legible. */
+
+h2{font-family: 'Special Elite', cursive;color: white; text-align: center; }
+/*In this case, the special elite typeface is used for subtitles.
+This highlights more focussed information, such as character synopsis, and divides the webpage up into easily digestable sections.*/
+
+h3{font-family: 'Special Elite', cursive;color: #f7001e; text-align: center; }
+/*I have chosen to use h3 as a sub-sbutitle that is more for decorative purposes, rather than for key information. Henceforth, I have chosen to use the red colour (seen in the p function)
+as it works with my colour scheme and allows for visual impairent support.*/
+video{max-width: 100%;}
+/*Max-width has been used to help the video player scale depending on screen size. Therefore, the user can easily watch the video on any given device.*/
+
+iframe{max-width: 100%}
+/*Max-width has been used to help the Iframe scale depending on screen size. Therefore, the user can easily watch the video on any given device, however, the container does not scale.*/
+
+a:hover{background-color: #f7001e; color: black}
+/*Hover animation helps highlight to the user what they are clicking, as well as adds to the aesthetic of the website.*/
+
+/* CAST class stylesheet will float the image to the left hand side of the page, with text and headings situated on the right hand side.
+This way, the composition of the website maintains a left to right reading path, however, the switched pictures add to the scruffy/ disorderly aesthetic associated with Gotham and Batman. */
+.cast img{float:left; width: 35%; padding-left: 27px; padding-right: 7px; padding-bottom: 5px; transform: rotate(2deg);}
+/*Transform has been used to help build upon the Batman/ detective-inspired design of the whole page.In addition, it makes it look as if its a polaroid in an investigation room.
+In addition, the padding and width functions helped with positioning my images in the webpage and keeping the large polaroid photos in a suitable scale for the given display context*/
+.cast aside{float:right;}
+.cast footer{background-color: black}
+.cast header{background-color: black}
+.cast h1{font-family: "Special Elite", cursive;}
+.cast h2{font-family:  'Oswald';}
+.cast p{font-family:  'Oswald'}
+
+
+/*CAST 1 stylesheet used to float the image on the right and the paragraphs on the left. This is used to help organise the cast section on the opposite side*/
+.cast1 img{float:right; width: 35%; padding-right: 27px; padding-left: 7px; padding-bottom: 5px}  /*Refer to comment on line 46*/
+.cast1 footer{background-color: black}
+.cast1 header{background-color: black}
+.cast1 h1{font-family: "Special Elite", cursive;}
+.cast1 h2{font-family: 'Oswald'}
+.cast1 p{font-family: 'Oswald'}
+/*Other Cast stylesheet for the central floating div.*/
+.othercast div{float: none;}
+.othercast img{max-width: 50%}
+/*TABLE STYLESHEET*/
+th{color: white; font-family: 'Oswald';font-size:; text-align: center;font-size: 150%}/*Text align used to keep everything in the cell centered and organised. The font size is increased as I want to emphasise the importance of the information (age rating etc)*/
+td{color: white; font-family: 'Oswald';font-size:; text-align: center;font-size: 125%}/*Text align used to keep everything in the cell centered and organised. The font size is increased as I want to emphasise the importance of the information (age rating etc)*/
+table{text-align: center;width:100%}/*I used width 100% to space the table equally over the contextual width of the screen. In addition, the text of the table is all centered and concise.*/
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f7001e;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* This is used as a visual indicator to highlight the user's choice*/
+.prev:hover, .next:hover {
+  background-color: #f7001e;
+  color: black
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family:
+  "Oswald"
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f7001e;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: "Oswald";
+  background-color: black {opacity:.5}
+
+}
+
+/* The dots/bullets/indicators. I used white to signify the slide wasn't currently visible at the moment.*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/*Used the red hover function to highlight which slide the user is selecting to appear next(visual indicator). */
+.active, .dot:hover {
+  background-color: #f7001e;
+}
+
+/* Fading animation on the slideshow. Adds visual flair to the slideshow and webpage */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}
+@keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+/*SOCIAL MEDIA LINKS AND BUTTONS*/
+/*MAIN BUTTON STYLESHEET.
+This outlines the size and look of each button. I chose to use a large padding and width as each button would need to be clear and legible for the user.*/
+.fa {
+  padding: 20px;
+  font-size: 100px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+/*Link when hovered over shall turn green as a small hidden reference relating to the riddler.
+ I have done this so that it both teases and gratifies the user, as well as indicates to the user that they are about to select the social media button.*/
+  .fa:hover {
+    background-color: black;
+    color: limegreen}
+/*YOUTUBE BUTTON*/
+
+.fa-youtube {
+    background: black;
+    color: #f7001e;
+  }
+/*INSTAGRAM BUTTON*/
+  .fa-instagram {
+  background: black;
+  color: #f7001e}
+/*TWITTER BUTTON*/
+.fa-twitter {
+background: black;
+color: #f7001e;}
